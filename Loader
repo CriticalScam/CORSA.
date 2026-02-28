@@ -38,18 +38,18 @@ local Window = Rayfield:CreateWindow({
 })
 
 local MainTab = Window:CreateTab("Home🫧", nil) -- Title, Image
-local MainSection = MainTab:CreateSection("Main")
+local MainSection = MainTab:CreateSection("MAIN")
 
 Rayfield:Notify({
-   Title = "Loaded!",
+   Title = "Loaded!⌛️",
    Content = "CORSA has been loaded!!",
    Duration = 5,
    Image = nil,
 })
 
 local Button = MainTab:CreateButton({
-   Name = "name",
-   Callback = function()
+   Name = "Combat-Gui",
+   Callback = function(loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/TSB/refs/heads/main/CombatGui"))())
    -- The function that takes place when the button is pressed
    end,
 })
